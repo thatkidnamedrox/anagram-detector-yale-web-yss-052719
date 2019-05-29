@@ -11,7 +11,6 @@ class Anagram
     words.find_all do |word|
       a = word.split("").sort
       b = @word.split("").sort
-      puts [a, b].inspect
       a == b
     end
   end
