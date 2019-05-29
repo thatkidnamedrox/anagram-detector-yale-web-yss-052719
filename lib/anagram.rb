@@ -8,7 +8,11 @@ class Anagram
   end
 
   def match(words)
-    words
+    words.find_all do |word|
+      a = word.split("")
+      b = @word.split("")
+      puts [a, b]
+    end
   end
 
 end
