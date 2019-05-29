@@ -9,8 +9,8 @@ class Anagram
 
   def match(words)
     words.find_all do |word|
-      a = word.split("")
-      b = @word.split("")
+      a = word.split("").sort
+      b = @word.split("").sort
       puts [a, b].inspect
     end
   end
